@@ -21,6 +21,7 @@ import org.geogebra.common.kernel.geos.GeoPoint;
 import org.geogebra.common.kernel.geos.GeoText;
 import org.geogebra.common.kernel.geos.GeoWidget;
 import org.geogebra.common.kernel.geos.MoveGeos;
+import org.geogebra.common.kernel.geos.groups.Group;
 import org.geogebra.common.kernel.matrix.Coords;
 import org.geogebra.common.main.App;
 import org.geogebra.common.util.AsyncOperation;
@@ -223,6 +224,9 @@ public class CopyPasteW extends CopyPaste {
 			if (geoslocal.contains(ce)) {
 				ce.getXML(false, copiedXml);
 			}
+		}
+		for (Group group : app.getSelectionManager().getSelectedGroups()) {
+			group.getXML(copiedXml);
 		}
 
 		kernel.setSaveScriptsToXML(saveScriptsToXML);
