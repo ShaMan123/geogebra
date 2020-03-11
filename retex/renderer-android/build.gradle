@@ -2,6 +2,12 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$rootProject.androidPluginVersion"
     }
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
+    }
 }
 
 apply plugin: 'com.android.library'

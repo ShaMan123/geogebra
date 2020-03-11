@@ -1,0 +1,22 @@
+include ':app'
+rootProject.name='GeogebraApp'
+
+include 'editor-base'
+project(':editor-base').projectDir = new File(rootProject.projectDir, '../retex/editor-base')
+
+include 'renderer-base'
+project(':renderer-base').projectDir = new File(rootProject.projectDir, '../retex/renderer-base')
+
+include 'editor-android'
+project(':editor-android').projectDir = new File(rootProject.projectDir, '../retex/editor-android')
+
+include 'renderer-android'
+project(':renderer-android').projectDir = new File(rootProject.projectDir, '../retex/renderer-android')
+
+include 'keyboard-base'
+project(':keyboard-base').projectDir = new File(rootProject.projectDir, '../keyboard-base')
+
+include 'keyboard-scientific'
+project(':keyboard-scientific').projectDir = new File(rootProject.projectDir, '../keyboard-scientific')
+
+

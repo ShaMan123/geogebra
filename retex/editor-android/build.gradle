@@ -2,6 +2,12 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$rootProject.androidPluginVersion"
     }
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
+    }
 }
 
 
@@ -33,6 +39,8 @@ publishing {
 dependencies {
 	api project(':editor-base')
     implementation project(':renderer-android')
+	testImplementation 'junit:junit:4.11'
+    compile project(path: ':keyboard-base')
 }
 
 android {

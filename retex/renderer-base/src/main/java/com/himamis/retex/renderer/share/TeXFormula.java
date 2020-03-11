@@ -417,7 +417,7 @@ public class TeXFormula {
 			}
 			if (size == null) {
 				throw new IllegalStateException(
-						"A size is required. Use setStyle()");
+						"A size is required. Use setSize()");
 			}
 			TeXFont font = (type == null) ? new TeXFont(size)
 					: createFont(size, type);

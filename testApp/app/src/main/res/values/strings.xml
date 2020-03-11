@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GeogebraApp</string>
+    <string name="ime_name">Geogebra Keyboard</string>
+    <string name="ime_math_type">math</string>
+</resources>

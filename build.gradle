@@ -45,11 +45,11 @@ subprojects {
 		}
 	}
 }
-
+/*
 wrapper {
 	gradleVersion = gradleVersionGGB
 }
-
+*/
 task checkPmd(dependsOn: [':common:pmdMain', ':common-jre:pmdMain', ':web:pmdMain', 
 	':editor-base:pmdMain', ':editor-web:pmdMain',
 	':keyboard-web:pmdMain', ':keyboard-base:pmdMain']){
